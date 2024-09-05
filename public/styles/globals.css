@@ -895,6 +895,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .radio {
@@ -932,9 +935,12 @@
           justify-content: center;
 }
 .radio-checked-primary {
-  background-color: #533bd4;
+  background-color: white;
   border-color: #533bd4;
+  border-width: 5px;
   color: white;
+  -webkit-transition: border-width 0.1s;
+  transition: border-width 0.1s;
 }
 .radio-checked-primary:hover {
   border-color: #533bd4;
@@ -944,7 +950,7 @@
           box-shadow: 0 0 0 3px rgb(221, 216, 246);
 }
 .radio-unchecked-primary {
-  background-color: transparent;
+  background-color: white;
 }
 .radio-unchecked-primary:hover {
   border-color: #533bd4;
@@ -954,9 +960,12 @@
           box-shadow: 0 0 0 3px rgb(221, 216, 246);
 }
 .radio-checked-secondary {
-  background-color: #4adcff;
+  background-color: white;
   border-color: #4adcff;
+  border-width: 5px;
   color: white;
+  -webkit-transition: border-width 0.1s;
+  transition: border-width 0.1s;
 }
 .radio-checked-secondary:hover {
   border-color: #4adcff;
@@ -966,7 +975,7 @@
           box-shadow: 0 0 0 3px rgb(219, 248, 255);
 }
 .radio-unchecked-secondary {
-  background-color: transparent;
+  background-color: white;
 }
 .radio-unchecked-secondary:hover {
   border-color: #4adcff;
@@ -976,9 +985,12 @@
           box-shadow: 0 0 0 3px rgb(219, 248, 255);
 }
 .radio-checked-tertiary {
-  background-color: #f96cc0;
+  background-color: white;
   border-color: #f96cc0;
+  border-width: 5px;
   color: white;
+  -webkit-transition: border-width 0.1s;
+  transition: border-width 0.1s;
 }
 .radio-checked-tertiary:hover {
   border-color: #f96cc0;
@@ -988,7 +1000,7 @@
           box-shadow: 0 0 0 3px rgb(254, 226, 242);
 }
 .radio-unchecked-tertiary {
-  background-color: transparent;
+  background-color: white;
 }
 .radio-unchecked-tertiary:hover {
   border-color: #f96cc0;
@@ -998,9 +1010,12 @@
           box-shadow: 0 0 0 3px rgb(254, 226, 242);
 }
 .radio-checked-success {
-  background-color: #28c76f;
+  background-color: white;
   border-color: #28c76f;
+  border-width: 5px;
   color: white;
+  -webkit-transition: border-width 0.1s;
+  transition: border-width 0.1s;
 }
 .radio-checked-success:hover {
   border-color: #28c76f;
@@ -1010,7 +1025,7 @@
           box-shadow: 0 0 0 3px rgb(212, 244, 226);
 }
 .radio-unchecked-success {
-  background-color: transparent;
+  background-color: white;
 }
 .radio-unchecked-success:hover {
   border-color: #28c76f;
@@ -1020,9 +1035,12 @@
           box-shadow: 0 0 0 3px rgb(212, 244, 226);
 }
 .radio-checked-warning {
-  background-color: #ff9f43;
+  background-color: white;
   border-color: #ff9f43;
+  border-width: 5px;
   color: white;
+  -webkit-transition: border-width 0.1s;
+  transition: border-width 0.1s;
 }
 .radio-checked-warning:hover {
   border-color: #ff9f43;
@@ -1032,7 +1050,7 @@
           box-shadow: 0 0 0 3px rgb(255, 236, 217);
 }
 .radio-unchecked-warning {
-  background-color: transparent;
+  background-color: white;
 }
 .radio-unchecked-warning:hover {
   border-color: #ff9f43;
@@ -1042,9 +1060,12 @@
           box-shadow: 0 0 0 3px rgb(255, 236, 217);
 }
 .radio-checked-error {
-  background-color: #ff4c51;
+  background-color: white;
   border-color: #ff4c51;
+  border-width: 5px;
   color: white;
+  -webkit-transition: border-width 0.1s;
+  transition: border-width 0.1s;
 }
 .radio-checked-error:hover {
   border-color: #ff4c51;
@@ -1054,7 +1075,7 @@
           box-shadow: 0 0 0 3px rgb(255, 219, 220);
 }
 .radio-unchecked-error {
-  background-color: transparent;
+  background-color: white;
 }
 .radio-unchecked-error:hover {
   border-color: #ff4c51;
@@ -1064,9 +1085,12 @@
           box-shadow: 0 0 0 3px rgb(255, 219, 220);
 }
 .radio-checked-info {
-  background-color: #00bad1;
+  background-color: white;
   border-color: #00bad1;
+  border-width: 5px;
   color: white;
+  -webkit-transition: border-width 0.1s;
+  transition: border-width 0.1s;
 }
 .radio-checked-info:hover {
   border-color: #00bad1;
@@ -1076,7 +1100,7 @@
           box-shadow: 0 0 0 3px rgb(204, 241, 246);
 }
 .radio-unchecked-info {
-  background-color: transparent;
+  background-color: white;
 }
 .radio-unchecked-info:hover {
   border-color: #00bad1;
@@ -1090,6 +1114,8 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
 }
 .checkbox-container-row {
@@ -1103,6 +1129,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .checkbox {
@@ -2135,6 +2164,89 @@
   background: #000000;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.table-container {
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+.table__header, .table__cell {
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.table__header {
+  background-color: #f2f2f2;
+  font-size: 12px;
+  padding: 12px 24px;
+}
+.table__header:first-child {
+  position: sticky;
+  left: -1px;
+  z-index: 1;
+}
+.table__cell {
+  padding: 16px 24px;
+}
+.table__cell:first-child {
+  position: sticky;
+  left: -1px;
+  z-index: 1;
+}
+
+.text--left {
+  text-align: left;
+}
+.text--ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.text--ellipsis:hover {
+  overflow: visible;
+  white-space: normal;
+}
+
+.zebra {
+  background-color: #f2f2f2;
+}
+
+.sort-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#table-header h2 {
+  margin-bottom: 0;
+}
+#table-header p {
+  margin-top: 5px;
+  color: #666;
 }
 
 .button-custom {
