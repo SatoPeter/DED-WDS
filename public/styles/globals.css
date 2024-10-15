@@ -2925,6 +2925,193 @@ input[type=range]::-webkit-slider-thumb:hover {
           align-items: flex-end;
 }
 
+.tag__container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #1c1c1c;
+  border-radius: 999px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 4px 8px;
+  gap: 6px;
+  cursor: pointer;
+}
+.tag__container:hover {
+  border: 1px solid #ddd8f6;
+  background-color: #ddd8f6;
+}
+
+.tag__label {
+  font-size: 14px;
+}
+
+.tag-disable {
+  pointer-events: none !important;
+  color: #cccccc !important;
+  border-color: #cccccc !important;
+}
+
+.tag-primary {
+  background-color: #533bd4;
+  color: #fff;
+  border-color: #533bd4;
+}
+.tag-primary:hover {
+  background-color: rgb(66, 47, 170);
+  border-color: rgb(66, 47, 170);
+}
+
+.tag-secondary {
+  background-color: #4adcff;
+  color: #fff;
+  border-color: #4adcff;
+}
+.tag-secondary:hover {
+  background-color: rgb(59, 176, 204);
+  border-color: rgb(59, 176, 204);
+}
+
+.tag-tertiary {
+  background-color: #f96cc0;
+  color: #fff;
+  border-color: #f96cc0;
+}
+.tag-tertiary:hover {
+  background-color: rgb(199, 86, 154);
+  border-color: rgb(199, 86, 154);
+}
+
+.tag-success {
+  background-color: #28c76f;
+  color: #fff;
+  border-color: #28c76f;
+}
+.tag-success:hover {
+  background-color: rgb(32, 159, 89);
+  border-color: rgb(32, 159, 89);
+}
+
+.tag-warning {
+  background-color: #ff9f43;
+  color: #fff;
+  border-color: #ff9f43;
+}
+.tag-warning:hover {
+  background-color: rgb(204, 127, 54);
+  border-color: rgb(204, 127, 54);
+}
+
+.tag-error {
+  background-color: #ff4c51;
+  color: #fff;
+  border-color: #ff4c51;
+}
+.tag-error:hover {
+  background-color: rgb(204, 61, 65);
+  border-color: rgb(204, 61, 65);
+}
+
+.tag-info {
+  background-color: #00bad1;
+  color: #fff;
+  border-color: #00bad1;
+}
+.tag-info:hover {
+  background-color: rgb(0, 149, 167);
+  border-color: rgb(0, 149, 167);
+}
+
+.tag-disalbe {
+  pointer-events: none !important;
+  color: #cccccc !important;
+  background-color: #cccccc !important;
+  color: white !important;
+}
+
+.accordion__container .accordion__list {
+  list-style: none;
+}
+.accordion__container .accordion__item {
+  border-bottom: 1px solid #EEEEEE;
+  border-radius: 4px;
+}
+.accordion__container .accordion-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+.accordion__container .accordion-content {
+  padding-top: 0;
+  max-height: 0; /* 初始時不顯示 */
+  overflow: hidden; /* 隱藏溢出內容 */
+  opacity: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s; /* 添加過渡效果 */
+}
+.accordion__container .accordion-content.expanded {
+  max-height: 800px;
+  opacity: 1;
+  padding: 0 16px 16px 16px;
+}
+
+.accordion-primary:hover {
+  background-color: rgb(221, 216, 246);
+}
+
+.accordion-secondary:hover {
+  background-color: rgb(219, 248, 255);
+}
+
+.accordion-tertiary:hover {
+  background-color: rgb(254, 226, 242);
+}
+
+.accordion-success:hover {
+  background-color: rgb(212, 244, 226);
+}
+
+.accordion-warning:hover {
+  background-color: rgb(255, 236, 217);
+}
+
+.accordion-error:hover {
+  background-color: rgb(255, 219, 220);
+}
+
+.accordion-info:hover {
+  background-color: rgb(204, 241, 246);
+}
+
+.accordion-disable {
+  pointer-events: none !important;
+}
+
+.accordion-disable span, .accordion-disable svg {
+  color: #cccccc !important;
+}
+
 .list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3138,6 +3325,148 @@ input[type=range]::-webkit-slider-thumb:hover {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.menu-container {
+  margin-inline: 8px;
+}
+.menu-container .menu-list {
+  list-style: none;
+}
+.menu-container .menu-list .menu-item {
+  border-bottom: 1px solid #eee;
+}
+.menu-container .menu-list .menu-item .menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #eeeeee;
+}
+.menu-container .menu-subList {
+  list-style-type: none;
+  margin-left: 1em;
+}
+.menu-container .menu-subList .menu-subItem {
+  border-bottom: 1px solid #eee;
+}
+.menu-container .menu-subList .menu-subItem:last-child {
+  border-bottom: none;
+}
+.menu-container .menu-subList .menu-subItem .menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.menu-primary {
+  background-color: #533bd4;
+}
+
+.menu-secondary {
+  background-color: #4adcff;
+}
+
+.menu-tertiary {
+  background-color: #f96cc0;
+}
+
+.menu-success {
+  background-color: #28c76f;
+}
+
+.menu-warning {
+  background-color: #ff9f43;
+}
+
+.menu-error {
+  background-color: #ff4c51;
+}
+
+.menu-info {
+  background-color: #00bad1;
+}
+
+.menu-primary .menu-list .menu-item:hover .menu-link {
+  background-color: rgb(135, 118, 225);
+}
+
+.menu-primary .menu-list .menu-item:hover > .menu-subList .menu-subItem:hover .menu-link {
+  color: white;
+  background-color: rgb(169, 157, 234);
+}
+
+.menu-secondary .menu-list .menu-item:hover .menu-link {
+  background-color: rgb(129, 231, 255);
+}
+
+.menu-secondary .menu-list .menu-item:hover > .menu-subList .menu-subItem:hover .menu-link {
+  color: white;
+  background-color: rgb(180, 240, 255);
+}
+
+.menu-tertiary .menu-list .menu-item:hover .menu-link {
+  background-color: rgb(251, 152, 211);
+}
+
+.menu-tertiary .menu-list .menu-item:hover > .menu-subList .menu-subItem:hover .menu-link {
+  color: white;
+  background-color: rgb(247, 180, 255);
+}
+
+.menu-error .menu-list .menu-item:hover .menu-link {
+  background-color: rgb(255, 130, 134);
+}
+
+.menu-error .menu-list .menu-item:hover > .menu-subList .menu-subItem:hover .menu-link {
+  color: white;
+  background-color: rgb(255, 175, 175);
+}
+
+.menu-success .menu-list .menu-item:hover .menu-link {
+  background-color: rgb(105, 216, 154);
+}
+
+.menu-success .menu-list .menu-item:hover > .menu-subList .menu-subItem:hover .menu-link {
+  color: white;
+  background-color: rgb(216, 248, 166);
+}
+
+.menu-warning .menu-list .menu-item:hover .menu-link {
+  background-color: rgb(255, 188, 124);
+}
+
+.menu-warning .menu-list .menu-item:hover > .menu-subList .menu-subItem:hover .menu-link {
+  color: white;
+  background-color: rgb(255, 223, 187);
+}
+
+.menu-info .menu-list .menu-item:hover .menu-link {
+  background-color: rgb(77, 207, 223);
+}
+
+.menu-info .menu-list .menu-item:hover > .menu-subList .menu-subItem:hover .menu-link {
+  color: white;
+  background-color: rgb(180, 227, 249);
+}
+
+.menu-disable {
+  pointer-events: none !important;
+  color: #cccccc !important;
+  background-color: #cccccc !important;
+  color: white !important;
 }
 
 .button-custom {
